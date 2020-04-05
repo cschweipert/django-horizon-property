@@ -1,11 +1,12 @@
 #top-bar {
-  background-color: rgb(0,0,0);
+  background-color:  #3333333;
   color: #fff;
   text-align: center;
 }
 
 #mynav {
-  background-color: black !important;
+  background-color:  black !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 /* .geofemail {
