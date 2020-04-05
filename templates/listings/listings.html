@@ -1,7 +1,107 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-<section id="showcase-inner" class="py-5 text-white">
+
+<div id="properties" class="property-container">
+  <!-- <h2>Featured Properties.</h2> -->
+  <div class="grid-container">
+    <div class="card">
+      <h3>Buffalo Boy</h3>
+      <h4 class="town">Silverton, CO</h4>
+      <h4>$675,000</h4>
+      <button id="myBtn"><img class="list" src="{% static '/img/buffaloboy.png' %}" alt="Buffalo boy property"></button> 
+    </div>
+    <div class="card">
+      <h3>Destination Ranch</h3>
+      <h4 class="town">Durango, CO</h4>
+      <h4>$350,000</h4>
+      <img class="list" src="{% static '/img/destinationranch.png' %}" alt="destination ranch property">
+    </div>
+    <div class="card">
+      <h3>Dolores River Ranch</h3>
+      <h4 class="town">Dolores, CO</h4>
+      <h4>$500,000</h4>
+      <img class="list" src="{% static '/img/doloresriverranch.png' %}" alt="dolores river ranch property">
+    </div>
+    <div class="card">
+      <h3>Dutch Boys Ranch</h3>
+      <h4 class="town">Hesperus, CO</h4>
+      <h4>$1,000,000</h4>
+      <img class="list" src="{% static '/img/dutchboysranch.png' %}" alt="dutch boys ranch property">
+    </div>
+    <div class="card">
+      <h3>Rusty Nail</h3>
+      <h4 class="town">Durango, CO</h4>
+      <h4>$1,000,000</h4>
+      <button id="myBtn"><img class="list" src="{% static '/img/rustynail.png' %}" alt="rusty nail property"></button> 
+    </div>
+    <div class="card">
+      <h3>Castle Rock</h3>
+      <h4 class="town">Durango, CO</h4>
+      <h4>$1,000,000</h4>
+      <img class="list" src="{% static '/img/castlerock.png' %}" alt="castle rock property">
+    </div>
+</div>
+
+
+    <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+<h3>Buffalo Boy</h3>
+<h4 class="town">Silverton, CO</h4>
+<h4>$675,000</h4>
+<!-- <img class="list" src="css/img/buffaloboy.png" alt="Buffalo boy property"> -->
+<p>This is truly a unique offering located just about 5 miles from Silverton. <br><br>
+The property is comprised of 2 mining claims; Townsite and Niegold Townsite that parallel one another.
+The old Buffalo Boy Lower Tramhouse is included on the Niegold Townsite claim. A lot of history here! The Buffalo Boy 
+Mine is located high above timberline and the ore was transported by tram to this lower tramhouse where it was 
+transferred and transported to the mill. <br><br> The tramhouse and cable system were built circa 1929 and a portion of the 
+lower tramhouse was improved into living quarters in the 1970's. The property would lend itself well to being developed into
+a destination retreat lodge and cabins. The large, substantial post and beam structure is in excellent condition and would 
+serve as a solid framework upon which to improve the building into habitable space to function as a lodge.
+<br><br> This location is a gateway to high mountain recreation and would be an excellent base camp for high country activities,
+or just a scenic getaway.</p>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+<!-- <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
@@ -12,7 +112,7 @@
     </div>
   </section>
 
-  <!-- Breadcrumb -->
+  
   <section id="bc" class="mt-3">
     <div class="container">
       <nav aria-label="breadcrumb">
@@ -27,12 +127,12 @@
     </div>
   </section>
 
-  <!-- Listings -->
+  
   <section id="listings" class="py-4">
     <div class="container">
       <div class="row">
 
-        <!-- Listing 1 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
@@ -75,7 +175,7 @@
           </div>
         </div>
 
-        <!-- Listing 2 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-2.jpg" alt="">
@@ -118,7 +218,7 @@
           </div>
         </div>
 
-        <!-- Listing 3 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-3.jpg" alt="">
@@ -161,7 +261,7 @@
           </div>
         </div>
 
-        <!-- Listing 4 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-4.jpg" alt="">
@@ -204,7 +304,7 @@
           </div>
         </div>
 
-        <!-- Listing 5 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-5.jpg" alt="">
@@ -247,7 +347,7 @@
           </div>
         </div>
 
-        <!-- Listing 6 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-6.jpg" alt="">
@@ -314,5 +414,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 {% endblock %}

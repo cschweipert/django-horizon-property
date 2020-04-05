@@ -1,8 +1,47 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-  <!-- Showcase -->
-  <section id="showcase">
+<div id="about" class="middle-container">
+  <div class="about-row">
+    <p>Durango's longest standing real estate firm, representing premier properties in Southwestern Colorado since 1980. <br><br>
+    Durango, Colorado provides the ultimate opportunity for living the Rocky Mountain lifestyle. With extensive knowledge of 
+    the Durango area, I can assist you through the entire process of buying & selling property. Horizon offers discreet buyer and 
+    seller representation and provides individual attention to every client, from first homes to luxury homes, ranches and land. </p>
+  </div>
+  <div class="about-row">
+    <div class="aspen-highlands">
+    <img class="aspen" src="{% static '/img/aspen-highlands.png' %}" alt="Aspen in SW Colorado">
+    <h3>Mission.</h3>
+    </div>
+    
+    <p>When it comes to offering the highest level of real estate brokerage services, Horizon Properties holds strongly to the 
+    conviction that bigger is not necessarily better. We are dedicated to providing our clients and customers a comprehensive approach 
+    to both marketing property for sale and identifying appropriate properties to purchase. <br><br> We live the Colorado lifestyle to the 
+    fullest and have accumulated a wealth of experience in building, real estate development and real estate investment both personally 
+    and professionally, over the past 40 years. <br><br> One of the cornerstones of Horizon Properties is a firm belief in the old adage about 
+    treating people the way we want to be treated. You put your trust in us, we deliver trustworthiness and more to you. Through the 
+    years we have represented people from all walks of life, in a variety of transactions from starter homes to fine estates, small 
+    acreage to big ranches, commercial properties and larger business opportunities. For those coming to Durango for the first time or 
+    those who have been here a lifetime, we pride ourselves in assisting clientele in achieving their real estate related goals, from 
+    conception through completion.</p>
+  </div>
+</div>
+
+
+
+  <!-- <a href="#top" >
+    <i class="fas fa-sort-up fa-5x uparrow" title="arrow button link to about section"></i>
+  </a> -->
+</div>
+</div>
+
+
+
+
+  
+  <!-- <section id="showcase">
     <div class="container text-center">
       <div class="home-search p-5">
         <div class="overlay p-5">
@@ -13,7 +52,7 @@
             voluptatum tempore! Consectetur, id commodi!</p>
           <div class="search">
             <form action="search.html">
-              <!-- Form Row 1 -->
+              
               <div class="form-row">
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">Keywords</label>
@@ -83,7 +122,7 @@
                   </select>
                 </div>
               </div>
-              <!-- Form Row 2 -->
+              
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <label class="sr-only">Bedrooms</label>
@@ -125,12 +164,12 @@
     </div>
   </section>
 
-  <!-- Listings -->
+  
   <section id="listings" class="py-5">
     <div class="container">
       <h3 class="text-center mb-3">Latest Listings</h3>
       <div class="row">
-        <!-- Listing 1 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
@@ -173,7 +212,7 @@
           </div>
         </div>
 
-        <!-- Listing 2 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-2.jpg" alt="">
@@ -216,7 +255,7 @@
           </div>
         </div>
 
-        <!-- Listing 3 -->
+        
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-3.jpg" alt="">
@@ -289,7 +328,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 {% endblock %}
 
 
