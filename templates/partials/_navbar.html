@@ -35,6 +35,14 @@
             {% endif %}>
             <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
           </li>
+          <li 
+            {% if 'mls' in request.path %}
+            class="nav-item active mr-3"
+            {% else %}
+            class="nav-item mr-3"
+            {% endif %}>
+            <a class="nav-link" href="{% url 'mls' %}">MLS Search</a>
+          </li>
           <li>
             <a class="nav-link" href="mailto:geofs@horizondurango.com">Contact me</a>
           </li>
