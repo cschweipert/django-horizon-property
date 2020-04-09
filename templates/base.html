@@ -1,37 +1,40 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Jura|Merriweather|Montserrat:200,300,400,500,600,700|Asap+Condensed:400,600|Rubik&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Jura|Merriweather|Montserrat:200,300,400,500,600,700|Asap+Condensed:400,600|Rubik&display=swap">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{% static 'css/all.css' %}">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}?20181209">
-    <!-- Custom -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}?20181209">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
 
-    <title>Horizon properties</title>
+  <title>Horizon properties</title>
 </head>
-<body>
-    
-    <!-- Navbar -->
-    {% include 'partials/_navbar.html' %}
-    <!-- Topbar -->
-    {% include 'partials/_topbar.html' %}
-    <!-- Main content -->
-    {% block content %} {% endblock %}
-    <!-- Footer -->
-    {% include 'partials/_footer.html' %}
 
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-    <script src="{% static 'js/lightbox.min.js' %}"></script>
+<body>
+
+  <!-- Navbar -->
+  {% include 'partials/_navbar.html' %}
+  <!-- Topbar -->
+  {% include 'partials/_topbar.html' %}
+  <!-- Main content -->
+  {% block content %} {% endblock %}
+  <!-- Footer -->
+  {% include 'partials/_footer.html' %}
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/lightbox.min.js' %}"></script>
 </body>
+
 </html>

@@ -2,53 +2,33 @@
 <!-- Navbar -->
 <img id="top" class="logo" src="{% static '/img/horizon.png' %}" alt="horizon logo">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mynav">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'index' %}">
-        <!-- <img src="{% static '/img/logo.png' %}" class="logo" alt=""> -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
-          <li 
-            {% if '/' == request.path %}
-            class="nav-item active mr-3"
-            {% else %}
-            class="nav-item mr-3"
-            {% endif %}>
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
-          </li>
-          <li 
-            {% if 'about' in request.path %}
-            class="nav-item active mr-3"
-            {% else %}
-            class="nav-item mr-3"
-            {% endif %}>
-            <a class="nav-link" href="{% url 'about' %}">About</a>
-          </li>
-          <li 
-            {% if 'listings' in request.path %}
-            class="nav-item active mr-3"
-            {% else %}
-            class="nav-item mr-3"
-            {% endif %}>
-            <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
-          </li>
-          <li 
-            {% if 'mls' in request.path %}
-            class="nav-item active mr-3"
-            {% else %}
-            class="nav-item mr-3"
-            {% endif %}>
-            <a class="nav-link" href="{% url 'mls' %}">MLS Search</a>
-          </li>
-          <li>
-            <a class="nav-link" href="mailto:geofs@horizondurango.com">Contact me</a>
-          </li>
-        </ul>
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'index' %}">
+      <!-- <img src="{% static '/img/logo.png' %}" class="logo" alt=""> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li {% if '/'==request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+          <a class="nav-link" href="{% url 'index' %}">Home</a>
+        </li>
+        <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+        <li {% if 'listings' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+          <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
+        </li>
+        <li {% if 'mls' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+          <a class="nav-link" href="{% url 'mls' %}">MLS Search</a>
+        </li>
+        <li>
+          <a class="nav-link" href="mailto:geofs@horizondurango.com">Contact me</a>
+        </li>
+      </ul>
 
-        <!-- <ul class="navbar-nav ml-auto">
+      <!-- <ul class="navbar-nav ml-auto">
           <li class="nav-item mr-3">
             <a class="nav-link" href="register.html">
               <i class="fas fa-user-plus"></i> Register</a>
@@ -58,6 +38,6 @@
               <i class="fas fa-sign-in-alt"></i>Login</a>
           </li>
         </ul> -->
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>
