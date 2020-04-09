@@ -1,0 +1,14 @@
+#header {
+    height: 50px;
+    background-color: #333333;
+    color: #fff;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+/* copy from chrome console */
+.module caption, .inline-group h2 {
+    background-color: #333333;
+}
