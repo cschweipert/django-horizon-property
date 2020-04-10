@@ -46,6 +46,26 @@
   /* padding-left: 500px; */
 }
 
+#properties {
+  padding-bottom: 0;
+}
+
+.price {
+  padding-top: 0;
+}
+
+.badge-secondary {
+  background-color: #333333;
+}
+
+.text-secondary {
+  color: #333333 !important;
+}
+
+.btn-primary {
+  background-color: #333333;
+}
+
 
 
 
@@ -369,11 +389,12 @@ h2 {
 .card {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #myBtn {
