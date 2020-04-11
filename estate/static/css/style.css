@@ -41,7 +41,7 @@
 }
 
 .copyright {
-  text-align: right;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   /* padding-left: 500px; */
 }
@@ -113,6 +113,16 @@
   color: #333333;
 }
 
+.headline {
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-geof {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 
