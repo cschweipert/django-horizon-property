@@ -171,6 +171,8 @@ img {
 
 
 
+
+
 .btn-secondary {
   color: #fff !important; }
 
@@ -438,6 +440,13 @@ h3 {
 }
 
 .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: justify;
+}
+
+.title-mission {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
