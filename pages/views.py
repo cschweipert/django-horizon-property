@@ -9,5 +9,8 @@ def index(request):
 def about(request):
     return render(request, 'pages/about.html')
 
+def alexa(request):
+    return render(request, 'pages/alexa.html')
+
 def mls(request):
     return render(request, 'pages/mls.html')

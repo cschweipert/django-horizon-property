@@ -14,9 +14,22 @@
         <li {% if '/' == request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
           <a class="nav-link" href="{% url 'index' %}">Home</a>
         </li>
-        <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
-          <a class="nav-link" href="{% url 'about' %}">About</a>
+
+        <li {% if 'about' in request.path %} class="nav-item active mr-3 dropdown" {% elif 'alexa' in request.path %} class="nav-item active mr-3 dropdown" 
+        {% else %} class="nav-item mr-3 dropdown" {% endif %}>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'about' %}">Geof Schlittgen</a>
+            <a class="dropdown-item" href="{% url 'alexa' %}">Alexa Schlittgen</a>
         </li>
+
+        <!-- class="nav-item dropdown" -->
+
+        <!-- <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li> -->
         <li {% if 'listings' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
           <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
         </li>
